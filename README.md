@@ -1,5 +1,7 @@
 # ProjetoUnis
-PROJETO DE EXTENSÃO. Desenvolvimento do aplicativo “HealthCalc Pro – Tecnologia e Saúde para Iniciantes em Academias”
+PROJETO DE EXTENSÃO. 
+
+Desenvolvimento do aplicativo “HealthCalc Pro – Tecnologia e Saúde para Iniciantes em Academias”
 
 
 PROPOSTA DE PROJETO DE EXTENSÃO
