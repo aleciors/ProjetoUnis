@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HealthCalc Pro 🏋️‍♂️"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <!-- Linha 1: Idade -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idade (anos):"
+                android:textSize="16sp"
+                android:drawableStart="@android:drawable/ic_menu_recent_history"
+                android:gravity="center"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Digite sua idade"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Linha 2: Sexo -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"
+                android:textSize="16sp"
+                android:drawableStart="@android:drawable/ic_menu_info_details"
+                android:gravity="center"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerSex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:entries="@array/sex_options"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Linha 3: Altura -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura (cm):"
+                android:textSize="16sp"
+                android:drawableStart="@android:drawable/ic_menu_view"
+                android:gravity="center"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editHeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Digite sua altura em cm"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Linha 4: Peso -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso (kg):"
+                android:textSize="16sp"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:gravity="center"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Digite seu peso em kg"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Linha 5: Horas de Sono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horas de Sono:"
+                android:textSize="16sp"
+                android:drawableStart="@android:drawable/ic_menu_day"
+                android:gravity="center"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editSleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Digite as horas de sono"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Linha 6: Refeições por Dia -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refeições por Dia:"
+                android:textSize="16sp"
+                android:drawableStart="@android:drawable/ic_menu_agenda"
+                android:gravity="center"
+                android:layout_column="0"
+                android:layout_row="5"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editMeals"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Digite o nº de refeições"
+                android:layout_column="1"
+                android:layout_row="5"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Linha 7: Nível de Atividade Física -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nível de Atividade:"
+                android:textSize="16sp"
+                android:drawableStart="@android:drawable/ic_menu_directions"
+                android:gravity="center"
+                android:layout_column="0"
+                android:layout_row="6"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerActivityLevel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="6"
+                android:layout_columnWeight="1"
+                android:entries="@array/activity_levels"
+                android:layout_marginBottom="8dp" />
+
+        </GridLayout>
+
+        <!-- Botões -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular Resultados"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpar Dados"
+            android:layout_marginTop="8dp" />
+
+        <!-- Resultados -->
+        <LinearLayout
+            android:id="@+id/resultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:visibility="gone">
+
+            <!-- IMC -->
+            <TextView
+                android:id="@+id/bmiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IMC: Aguardando cálculo..."
+                android:textSize="14sp"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Gasto Energético -->
+            <TextView
+                android:id="@+id/energyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gasto Energético: Aguardando cálculo..."
+                android:textSize="14sp"
+                android:drawableStart="@android:drawable/ic_menu_rotate"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Cortisol -->
+            <TextView
+                android:id="@+id/cortisolText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estimativa de Cortisol: Aguardando cálculo..."
+                android:textSize="14sp"
+                android:drawableStart="@android:drawable/ic_menu_info_details"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Suplementos e Hidratação -->
+            <TextView
+                android:id="@+id/supplementsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recomendações de Suplementos e Hidratação: Aguardando cálculo..."
+                android:textSize="14sp"
+                android:drawableStart="@android:drawable/ic_menu_add"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Nota -->
+            <TextView
+                android:id="@+id/noteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Nota: Consulte um nutricionista para ajustes personalizados."
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
