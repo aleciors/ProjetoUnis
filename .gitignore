@@ -13,16 +13,3 @@
 .externalNativeBuild
 .cxx
 local.properties
-# Android Studio
-.idea/
-*.iml
-local.properties
-
-# Arquivos de build
-build/
-app/build/
-
-# Outros
-*.apk
-*.ap_
-*.aab
